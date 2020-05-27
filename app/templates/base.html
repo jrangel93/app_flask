@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{% if title %}
+	<meta charset="UTF-8">
+	<title>{{ title }} - JRBlog</title>
+	{% else %}
+	<title>Welcome to JRBlog</title>
+	{% endif %}
+</head>
+<body>
+	<div>JRBlog: <a href="/index">Home</a></div>
+	<hr>
+	{% block content %}{% endblock %}
+</body>
+</html>
